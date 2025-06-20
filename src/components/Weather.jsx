@@ -91,6 +91,10 @@ export default function Weather() {
 
   return (
     <div className='weather'>
+      <div style={{ marginBottom: '3em', textAlign: 'center'}}>
+        <h1 style={{ color: 'white'}}>Weather Buddy</h1>
+        <p style={{ color: 'white'}}>Quickly get today weather before heading out</p>
+      </div>
       <div className="search-bar">
         <input type="text" name="" ref={inputRef} placeholder='Search' />
         <img src={search_icon} alt="" onClick={()=>search(inputRef.current.value)} />
